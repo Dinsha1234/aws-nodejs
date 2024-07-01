@@ -10,7 +10,8 @@ app.get('/get/user_details', (req,res)=>{
         user: {
             name: "Dinsha",
             age: 25,
-            contact:12234
+            contact:12234,
+            keyword: "hey there"
         }
     })
 })
