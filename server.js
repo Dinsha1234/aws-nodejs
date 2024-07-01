@@ -1,5 +1,6 @@
 const express = require("express")
 const app = express()
+require("dotenv").config
 
 app.get('/get/user', (req,res)=>{
     res.send({message: "hello back to node js"})
@@ -16,6 +17,6 @@ app.get('/get/user_details', (req,res)=>{
     })
 })
 
-app.listen(3000,()=> {
-    console.log('listening to port', 3000)
+app.listen(process.env.PORT,()=> {
+    console.log('listening to port', process.env.PORT)
 })
