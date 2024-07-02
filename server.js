@@ -1,6 +1,6 @@
 const express = require("express")
 const app = express()
-require("dotenv").config
+require("dotenv").config()
 
 app.get('/get/user', (req,res)=>{
     res.send({message: "hello back to node js"})
